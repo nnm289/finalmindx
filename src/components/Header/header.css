@@ -1,0 +1,26 @@
+
+.logo {
+      margin-left: 45%;
+  font-size: large;
+  font-weight: bold;
+}
+.NavBar {
+  display: flex;
+  align-items: center;
+  margin-left: 28%;
+  margin-right: 28%;
+  border-bottom: 1px solid rgb(244, 244, 244);
+}
+.NavItem{
+    justify-content: space-around;
+    width:100px;
+    margin-left: 70px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+
+}
+.active{
+    border-bottom: 4px solid skyblue;
+
+}
