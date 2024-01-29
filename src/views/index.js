@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import Task from "../components/Task";
 import TaskInput from "../components/TaskInput";
-// import Delete from "../components/Delete";
+import Delete from "../components/Delete";
 
 
 function All() {
@@ -18,6 +18,10 @@ function All() {
     newArr[index].isDone = checked;
     setTaskList(newArr);
   };
+
+  const deleteAll = ()=>{
+    setTaskList([])
+  }
 
 console.log(taskList);
   return (
@@ -35,12 +39,13 @@ console.log(taskList);
             onChecked={onChecked}
           />
         ))}
+       
       </div>
-
+<Delete onDeleteAll = {deleteAll}></Delete>
     </div>
   );
 }
 
-export default All()
+export default All
 
 
